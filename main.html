@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <title>Weather App</title>
+</head>
+
+
+<body class="bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out opacity-0">
+    <header class="flex justify-between items-center mx-20 py-6">
+        <div class="title text-primary text-header"><i class="ti ti-cloud mr-3"></i>Skycast</div>
+        <div class="input-container relative">
+            <i class="ti ti-search absolute top-1/2 -translate-y-1/2 left-3 text-primary/60"></i>
+            <input type="search" placeholder="Search for your city" class="bg-neutral px-4 pl-10 py-2.5 outline-none w-full max-w-sm text-[20px] font-light text-primary placeholder:text-primary/50 transition-all ease-out focus:bg-primary/5 rounded-tl-2xl rounded-br-2xl">
+        </div>
+        <div class="date text-primary text-header"></div>
+    </header>
+    <section class="text-primary px-7">
+        <div class="location text-5xl mt-12 mb-8"></div>
+        <div class="flex items-end gap-5 text-shadow-lg">
+            <div class="temp text-8xl text-accent"></div>
+            <div class="weather-state">
+                <div class="description text-xl capitalize"></div>
+                <div class="feels-like text-sm text-primary/70 mt-1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="card-container p-9 ">
+        <div class="grid grid-cols-4 gap-3 m-16">
+            <div class="wind-speed card">
+                <div class="icon ">
+                    <i class="ti ti-wind text-xl text-accent"></i>
+                </div>
+                <div class="text">
+                    <h4 class="text-[14px] text-primary/70">Wind Speed</h4>
+                    <span class="font "></span>
+                </div>
+            </div>
+            <div class="humidity card">
+                <div class="icon ">
+                    <i class="ti ti-droplet text-xl text-accent"></i>
+                </div>
+                <div class="text">
+                    <h4 class="text-[14px] text-primary/70">Humidity</h4>
+                    <span class="font "></span>
+                </div>
+            </div>
+            <div class="pressure card">
+                <div class="icon ">
+                    <i class="ti ti-gauge text-xl text-accent"></i>
+                </div>
+                <div class="text">
+                    <h4 class="text-[14px] text-primary/70">Pressure</h4>
+                    <span class="font "></span>
+                </div>
+            </div>
+            <div class="visibility card">
+                <div class="icon ">
+                    <i class="ti ti-eye text-xl text-accent"></i>
+                </div>
+                <div class="text">
+                    <h4 class="text-[14px] text-primary/70">Visibility</h4>
+                    <span class="font "></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="error-message hidden">
+        <i class="ti ti-alert-circle text-xl"></i>
+        <span class="error-text text-[15px] font-medium"></span>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+
+</html>

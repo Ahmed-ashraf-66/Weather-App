@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #042c53;   
+    --color-accent: #3b82f6;
+    --color-neutral: #eef4fa;
+}
+
+.text-header {
+    @apply text-2xl font-serif 
+}
+.card{
+    @apply flex items-center gap-4 bg-neutral rounded-xl p-5
+}
+.icon {
+    @apply w-14 h-14 flex items-center justify-center rounded-full bg-accent/20 text-2xl
+}
+.font {
+    @apply text-[22px] font-medium text-primary
+}
+.error-message {
+    @apply fixed top-6 left-1/2 -translate-x-1/2 bg-red-50 border border-red-200 text-red-700 px-5 py-3 rounded-xl  shadow-sm z-50
+}
