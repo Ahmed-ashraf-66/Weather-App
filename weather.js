@@ -58,7 +58,7 @@
             setLocalStorage(myData)
         } catch (err) {
             console.error(err)
-            showErrorMessage("ُNo city found with that name.")
+            showErrorMessage("Something went wrong. Please try again.")
         }
     }
 
@@ -87,7 +87,7 @@
             visibility: data.visibility / 1000,
         }
         window.localStorage.setItem("weather", JSON.stringify(weatherInfo))
-        renderWeatherDispaly(weatherInfo)
+        renderWeatherDisplay(weatherInfo)
     }
 
     // Get Data From LocalStorage
@@ -98,7 +98,7 @@
     }
 
     // Set All Data In App Display
-    function renderWeatherDispaly(info) {
+    function renderWeatherDisplay(info) {
         locationEl.textContent = `${info.city}, ${info.country}`
         temp.textContent = `${info.temp}°`
         descriptionEl.textContent = info.description
