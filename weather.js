@@ -43,6 +43,7 @@
                 return
             }
             getMyData(query)
+            searchBox.value = ''
         }
     }
 
