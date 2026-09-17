@@ -24,13 +24,13 @@
 
     // All Backgrounds of Weather
     const backgrounds = {
-        Clear: "url('./images/clear.jpg')",
-        Clouds: "url('./images/clouds.jpg')",
-        Rain: "url('./images/rain.jpg')",
-        Drizzle: "url('./images/rain.jpg')",
-        Thunderstorm: "url('./images/thunderstorm.jpg')",
-        Snow: "url('./images/snow.jpg')",
-        default: "url('./images/clear.jpg')"
+        Clear: "url('./Images/clear.jpg')",
+        Clouds: "url('./Images/clouds.jpg')",
+        Rain: "url('./Images/rain.jpg')",
+        Drizzle: "url('./Images/rain.jpg')",
+        Thunderstorm: "url('./Images/thunderstorm.jpg')",
+        Snow: "url('./Images/snow.jpg')",
+        default: "url('./Images/clear.jpg')"
     };
 
     // <---------- Functions ---------->
