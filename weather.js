@@ -107,7 +107,6 @@
         windSpeedEl.textContent = `${info.windSpeed} m/s`
         pressureEl.textContent = `${info.pressure} hPa`
         visibilityEl.textContent = `${info.visibility} Km`
-        console.log(info.description_state)
         weatherDate(info.date)
         updateBackgroundImage(info.description_state)
     }
